@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>まちハロ Hello まちだハロウィンフェス</title>
+    <meta name="description" content="出会って、笑って、心地良い。Where Smiles Connect ─ 10月25日（日）町田平和会館にて開催！まちだハロウィンフェス「まちハロ」">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mochiy+Pop+P+One&family=Outfit:wght@300;400;600;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ========== パーティクルキャンバス ========== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ========== ナビゲーション ========== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">🎃 まちハロ</a>
+            <button id="nav-toggle" class="nav-toggle" aria-label="メニュー">
+                <span class="pumpkin-menu">🎃</span>
+            </button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#hero" class="nav-link">トップ</a></li>
+                <li><a href="#about" class="nav-link">イベント概要</a></li>
+                <li><a href="#contents" class="nav-link">企画紹介</a></li>
+                <li><a href="#access" class="nav-link">アクセス</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== ヒーローセクション ========== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-elements">
+            <div class="moon">
+                <div class="moon-countdown">
+                    <span class="moon-cd-small">まちハロまで</span><br>
+                    <span class="moon-cd-large">あと<span id="moon-cd-days">--</span>日</span>
+                </div>
+            </div>
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-garland">
+                <span class="g-item">🎃</span><span class="g-item">🦇</span><span class="g-item">🍬</span><span
+                    class="g-item">⭐</span><span class="g-item">🎃</span><span class="g-item">🦇</span><span
+                    class="g-item">🍬</span><span class="g-item">⭐</span><span class="g-item">🎃</span>
+            </div>
+            <div class="hero-title-group">
+                <div class="title-hello-wrapper">
+                    <span class="hero-hello">
+                        <div>
+                            <span class="hello-paren"></span><span class="hello-cursive">Hello</span><span
+                                class="hello-paren"></span>
+                        </div>
+                    </span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-machi">まち</span><span class="title-ha">ハ<span
+                            class="witch-hat"></span></span><span class="title-ro">ロ<span
+                            class="ghost-on-ro"></span></span>
+                </h1>
+                <div class="hero-ribbon">
+                    <p class="hero-subtitle">- まちだハロウィンフェス -</p>
+                </div>
+            </div>
+            <div class="hero-catchcopy">
+                <p class="catchcopy-ja">出会って<span class="comma">、</span>笑って<span class="comma">、</span>心地良い。</p>
+                <p class="catchcopy-en">Where Smiles Connect</p>
+            </div>
+            <div class="hero-info-box">
+                <div class="info-date">
+                    <span class="info-label">日程</span>
+                    <p class="info-value">10<span class="small">月</span>25<span class="small">日(日)</span></p>
+                </div>
+                <div class="info-divider"></div>
+                <div class="info-location">
+                    <span class="info-label">場所</span>
+                    <p class="info-value">創価学会<br>町田平和会館</p>
+                </div>
+            </div>
+            <a href="#about" class="hero-cta">
+                <span>👻 くわしく見る</span>
+                <svg class="cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7" />
+                </svg>
+            </a>
+        </div>
+        <div class="hero-ghosts">
+            <div class="ghost ghost-1">👻</div>
+            <div class="ghost ghost-2">👻</div>
+            <div class="ghost ghost-3">👻</div>
+        </div>
+        <div class="hero-pumpkins">
+            <div class="pumpkin pumpkin-left">🎃</div>
+            <div class="pumpkin pumpkin-right">🎃</div>
+        </div>
+    </section>
+
+
+
+    <!-- ========== イベント概要 ========== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title">🎃 イベント概要</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card scroll-animate" style="--delay: 0.1s">
+                    <div class="about-card-icon">📅</div>
+                    <div class="about-card-label">開催日</div>
+                    <div class="about-card-value">10月25日（日）</div>
+                </div>
+                <div class="about-card scroll-animate" style="--delay: 0.2s">
+                    <div class="about-card-icon">📍</div>
+                    <div class="about-card-label">会場</div>
+                    <div class="about-card-value">町田平和会館</div>
+                </div>
+                <div class="about-card scroll-animate" style="--delay: 0.3s">
+                    <div class="about-card-icon">🎪</div>
+                    <div class="about-card-label">入場</div>
+                    <div class="about-card-value">無料・入退場自由</div>
+                </div>
+            </div>
+            <div class="about-message scroll-animate">
+                <p>ハロウィンの季節、みんなで集まって<br class="sp-only">最高の一日を過ごしませんか？</p>
+                <p class="about-message-sub">音楽・体験・交流── 大人も子どもも楽しめるフェスが町田にやってくる！</p>
+            </div>
+        </div>
+        <div class="about-bg-deco">
+            <span class="deco-pumpkin deco-p1">🎃</span>
+            <span class="deco-pumpkin deco-p2">🎃</span>
+            <span class="deco-bat deco-b1">🦇</span>
+            <span class="deco-bat deco-b2">🦇</span>
+        </div>
+    </section>
+
+    <!-- ========== 企画・コンテンツ紹介 ========== -->
+    <section id="contents" class="contents-section">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title">🎵 企画・コンテンツ</h2>
+                <div class="section-line"></div>
+                <p class="section-desc">スクロールして、ハロウィンナイトの企画を覗いてみよう👀</p>
+            </div>
+
+            <!-- メインステージ -->
+            <div class="content-card content-card--stage scroll-animate" style="--delay: 0.1s">
+                <div class="content-card-header">
+                    <span class="content-card-icon">🎸</span>
+                    <h3 class="content-card-title">メインステージ</h3>
+                    <span class="content-card-venue">池田講堂</span>
+                </div>
+                <div class="content-card-body">
+                    <ul class="content-list">
+                        <li>
+                            <span class="list-icon">🎤</span>
+                            <div>
+                                <strong>青年世代のライブステージ</strong>
+                                <p>弾き語り・バンド演奏で会場を盛り上げます！</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">🎵</span>
+                            <div>
+                                <strong>未来部・少年少女部の発表</strong>
+                                <p>青空合唱団のステージ＆全員参加型の簡易楽器企画</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">⭐</span>
+                            <div>
+                                <strong>スペシャルゲスト出演</strong>
+                                <p>レッツゴーなぎらさん 他、特別ゲストが登場！</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">💡</span>
+                            <div>
+                                <strong>実生活に役立つセミナー</strong>
+                                <p>健康・子育て・生成AI活用など、今すぐ使える知識が満載</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-card-deco">
+                    <span>🦇</span><span>🦇</span><span>🦇</span>
+                </div>
+            </div>
+
+            <!-- サブブース -->
+            <div class="content-card content-card--booth scroll-animate" style="--delay: 0.2s">
+                <div class="content-card-header">
+                    <span class="content-card-icon">🎪</span>
+                    <h3 class="content-card-title">サブブース企画</h3>
+                    <span class="content-card-venue">各フロア</span>
+                </div>
+                <div class="content-card-body">
+                    <ul class="content-list">
+                        <li>
+                            <span class="list-icon">💅</span>
+                            <div>
+                                <strong>ネイル・ファッション講座</strong>
+                                <p>ハロウィンネイルや秋ファッションのプロ講座</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">🎮</span>
+                            <div>
+                                <strong>ゲームコーナー</strong>
+                                <p>ハロウィンテーマのミニゲームで盛り上がろう！</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">🍬</span>
+                            <div>
+                                <strong>キッズコーナー</strong>
+                                <p>トリック・オア・トリート！お菓子配り＆キッズ向け企画</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-card-deco">
+                    <span>🍬</span><span>🍭</span><span>🍬</span>
+                </div>
+            </div>
+
+            <!-- 対話・交流 -->
+            <div class="content-card content-card--talk scroll-animate" style="--delay: 0.3s">
+                <div class="content-card-header">
+                    <span class="content-card-icon">💬</span>
+                    <h3 class="content-card-title">対話・交流コーナー</h3>
+                    <span class="content-card-venue">交流スペース</span>
+                </div>
+                <div class="content-card-body">
+                    <ul class="content-list">
+                        <li>
+                            <span class="list-icon">📺</span>
+                            <div>
+                                <strong>日常ちゃんねる視聴コーナー</strong>
+                                <p>気軽に立ち寄って、対話を楽しめるリラックス空間</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">☕</span>
+                            <div>
+                                <strong>フリートークスペース</strong>
+                                <p>初めての方も大歓迎！お茶を飲みながらおしゃべり</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-card-deco">
+                    <span>👻</span><span>👻</span><span>👻</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== アクセス ========== -->
+    <section id="access" class="access-section">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <h2 class="section-title">🗺️ アクセス</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="access-grid">
+                <div class="access-info scroll-animate" style="--delay: 0.1s">
+                    <div class="access-venue-name">
+                        <span class="access-icon">📍</span>
+                        <h3>町田平和会館</h3>
+                    </div>
+                    <div class="access-details">
+                        <div class="access-detail-item">
+                            <span class="detail-label">住所</span>
+                            <span class="detail-value">東京都町田市森野2丁目</span>
+                        </div>
+                        <div class="access-detail-item">
+                            <span class="detail-label">最寄駅</span>
+                            <span class="detail-value">小田急線 町田駅 徒歩約10分</span>
+                        </div>
+                        <div class="access-detail-item">
+                            <span class="detail-label">日時</span>
+                            <span class="detail-value">10月25日（日）</span>
+                        </div>
+                    </div>
+                    <div class="access-welcome">
+                        <p>👻 みんな来てね！</p>
+                        <p class="welcome-sub">仮装してきても大歓迎🎃</p>
+                    </div>
+                </div>
+                <div class="access-map scroll-animate" style="--delay: 0.2s">
+                    <div class="map-container" id="map-placeholder">
+                        <div class="map-overlay">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.0!2d139.445!3d35.555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z55S65Lqt5biC55S65LqV!5e0!3m2!1sja!2sjp!4v1234567890"
+                                width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen=""
+                                loading="lazy" title="町田平和会館 地図">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== 参加フォーム CTA ========== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box scroll-animate">
+                <h2>🎃 参加申し込みはこちら 🎃</h2>
+                <p>事前申し込みで当日スムーズに入場できます！</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3BJRNs7r-1VBXGcItKG9MGoy-5VTKKYv8E7tITdoLcZcURQ/viewform"
+                    target="_blank" rel="noopener" class="form-btn">
+                    <span>🎫 参加フォームを開く</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== フッター ========== -->
+    <footer class="footer">
+        <div class="footer-deco">
+            <span>🎃</span><span>👻</span><span>🦇</span><span>🍬</span><span>⭐</span><span>🎃</span><span>👻</span><span>🦇</span><span>🍬</span><span>⭐</span>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="footer-logo-text">まちハロ</span>
+                    <span class="footer-logo-sub">まちだハロウィンフェス</span>
+                </div>
+                <div class="footer-info">
+                    <p>📅 10月25日（日）</p>
+                    <p>📍 町田平和会館</p>
+                </div>
+                <div class="footer-catchcopy">
+                    <p>出会って、笑って、心地良い。</p>
+                    <p class="en">Where Smiles Connect</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 まちハロ - まちだハロウィンフェス</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== 追従型参加ボタン ========== -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3BJRNs7r-1VBXGcItKG9MGoy-5VTKKYv8E7tITdoLcZcURQ/viewform"
+        target="_blank" rel="noopener" class="floating-form-btn">
+        <span class="float-icon">🎫</span>
+        <span class="float-text">参加<br>申込</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

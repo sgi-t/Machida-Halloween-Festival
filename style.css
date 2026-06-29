@@ -1237,3 +1237,30 @@ ul { list-style: none; }
         font-size: 0.7rem;
     }
 }
+
+/* Fix moon overlap on responsive */
+@media (max-width: 900px) {
+    .moon {
+        top: 2%;
+        right: 2%;
+        width: 140px;
+        height: 140px;
+    }
+    .hero-content {
+        padding-top: 40px;
+    }
+}
+@media (max-width: 500px) {
+    .moon {
+        top: -10px;
+        right: -10px;
+        width: 120px;
+        height: 120px;
+    }
+    .hero-content {
+        padding-top: 80px;
+    }
+    .title-hello-wrapper {
+        top: -35px;
+    }
+}
